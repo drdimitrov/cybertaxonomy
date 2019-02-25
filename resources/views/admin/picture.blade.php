@@ -5,15 +5,23 @@
 <div class="card">
     <div class="card-header">Add new picture</div>
     <div class="card-body">
+
+        <script>
+            UPLOADCARE_LIVE = false;
+            UPLOADCARE_IMAGES_ONLY = true;
+            UPLOADCARE_CROP = 'free';
+        </script>
+        <p>Add new Image:</p>
+        {!! $api->widget->getScriptTag() !!}
+
         <form method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="img_file">Choose file</label>
-                <input type="file" class="form-control-file" name="img_file">
+                {!! $api->widget->getInputTag('img_file') !!}
             </div>
 
             <div class="form-group">
-                <label for="name">Picture name</label>
-                <input type="text" class="form-control" name="name">
+                <label for="description">Picture name</label>
+                <input type="text" class="form-control" name="description">
             </div>
 
             {{ csrf_field() }}

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Picture;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -28,7 +29,9 @@ class AdminController extends Controller
 
     public function picture()
     {
-        return view('admin.picture');
+        return view('admin.picture', [
+            'api' =>  app('uploadcare')
+        ]);
 
     }
 
@@ -37,7 +40,15 @@ class AdminController extends Controller
 
         $file = app('uploadcare')->getFile($request->img_file);
 
-        dd($file);
+        $picture = Picture::create([
+            'hash' =>  str_random(40),
+            'url' => $file->getUrl(),
+            'description' => $request->description,
+        ]);
+
+        $file->store();
+
+        return redirect()->back();
     }
 
     public function news()

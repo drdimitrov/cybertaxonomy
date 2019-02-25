@@ -8,7 +8,11 @@
             <div class="card">
                 <div class="card-header"><h2>Picture gallery</h2></div>
                 <div class="card-body">
-
+                    @foreach($pictures as $picture)
+                        <a href="{{ $picture->url }}" class="image featured fancybox fancyimg" rel="gallery1" title="{{ $picture->description }}">
+                            <img src="{{ app('uploadcare')->getFile($picture->url)->op('quality/lightest')->op('progressive/yes')->resize(200, 150, true)->getUrl() }}" alt="" />
+                        </a>
+                    @endforeach
                 </div>
             </div>
         </div>
