@@ -32,6 +32,14 @@ class AdminController extends Controller
 
     }
 
+    public function pictureSave(Request $request)
+    {
+
+        $file = app('uploadcare')->getFile($request->img_file);
+
+        dd($file);
+    }
+
     public function news()
     {
         return view('admin.news');

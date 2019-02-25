@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Uploadcare;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton('uploadcare', function ($app) {
+            return new Uploadcare\Api(env('UPLOADCARE_PUBLIC'), env('UPLOADCARE_SECRET'));
+        });
     }
 }
