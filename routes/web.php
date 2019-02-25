@@ -22,6 +22,8 @@ Route::get('/news', 'NewsController@index')->name('news');
 
 Route::get('/papers', 'PapersController@index')->name('papers');
 
+Route::get('/gallery', 'GalleryController@index')->name('gallery');
+
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');

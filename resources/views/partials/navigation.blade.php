@@ -17,6 +17,9 @@
             <li class="nav-item @if(request()->route()->getName() == 'papers') active @endif">
                 <a class="nav-link" href="/papers">Papers</a>
             </li>
+            <li class="nav-item @if(request()->route()->getName() == 'gallery') active @endif">
+                <a class="nav-link" href="/gallery">Gallery</a>
+            </li>
             <li class="nav-item @if(request()->route()->getName() == 'contact') active @endif">
                 <a class="nav-link" href="/contact-us">Contact us</a>
             </li>
