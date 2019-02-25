@@ -26,7 +26,8 @@ Route::get('/gallery', 'GalleryController@index')->name('gallery');
 
 Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('home');
+// Admin routes
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/admin/paper', 'AdminController@paper')->name('admin.paper');
 Route::get('/admin/picture', 'AdminController@picture')->name('admin.picture');
+Route::get('/admin/news', 'AdminController@news')->name('admin.news');

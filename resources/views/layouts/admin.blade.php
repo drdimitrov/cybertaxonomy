@@ -48,6 +48,11 @@
           <span>Add new paper</span></a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('admin.news') }}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Add news</span></a>
+      </li>
     </ul>
 
     <div id="content-wrapper">

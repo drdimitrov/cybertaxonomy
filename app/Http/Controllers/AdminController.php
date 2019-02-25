@@ -31,4 +31,10 @@ class AdminController extends Controller
         return view('admin.picture');
 
     }
+
+    public function news()
+    {
+        return view('admin.news');
+
+    }
 }

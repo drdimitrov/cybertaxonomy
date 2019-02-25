@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-8">
+        <div class="col-9">
             <div class="card">
                 <div class="card-header"><h2>The project</h2></div>
                 <div class="card-body">
@@ -21,30 +21,30 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-3">
             <div class="card">
                 <div class="card-header"><h2>News:</h2></div>
                 <div class="card-body">
                     <aside>
-                        <h4>
+                        <h5>
                             <a href="#">Something happened</a>
-                        </h4>
+                        </h5>
 
                         <p>Tragnal kos s dalag nos <a href="#">...</a></p>
                     </aside>
 
                     <aside>
-                        <h4>
+                        <h5>
                             <a href="#">Something else happened</a>
-                        </h4>
+                        </h5>
 
                         <p>Tragnal drug kos s dalag nos <a href="#">...</a></p>
                     </aside>
 
                     <aside>
-                        <h4>
+                        <h5>
                             <a href="#">Third piece of news</a>
-                        </h4>
+                        </h5>
 
                         <p>Bla bla <a href="#">...</a></p>
                     </aside>
