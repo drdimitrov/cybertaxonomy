@@ -19,3 +19,13 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+<script>
+    $('.fancyimg').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        type : 'image'
+    });
+</script>
+@endsection
