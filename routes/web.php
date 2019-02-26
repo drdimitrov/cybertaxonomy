@@ -30,6 +30,7 @@ Auth::routes();
 Route::get('/admin', 'AdminController@index')->name('admin');
 
 Route::get('/admin/paper', 'AdminController@paper')->name('admin.paper');
+Route::post('/admin/paper', 'AdminController@paperSave');
 
 Route::get('/admin/picture', 'AdminController@picture')->name('admin.picture');
 Route::post('/admin/picture', 'AdminController@pictureSave');

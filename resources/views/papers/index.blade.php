@@ -20,17 +20,21 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <th scope="row">Dimitrov, Deltshev & Lazarov</th>
-                                <td>2017</td>
-                                <td>
-                                    Description of <i>Histopona breviemboli</i> sp. n. from the Balkan Peninsula (Arachnida, Araneae, Agelenidae)
-                                </td>
-                                <td>Zootaxa 4311(2): 283-286. doi:10.11646/zootaxa.4311.2.10</td>
-                                <td><a href="/articles/Dimitrov_et_al_2017.pdf" target="_blank">Open</a></td>
-                            </tr>
+                            @php $cnt = 1; @endphp
 
+                            @foreach($papers as $paper)
+                            <tr>
+                                <th scope="row">{{ $cnt }}</th>
+                                <th scope="row">{{ $paper->authors }}</th>
+                                <td>{{ $paper->year }}</td>
+                                <td>{!! $paper->title !!}</td>
+                                <td>{{ $paper->journal }}</td>
+                                <td>
+                                    <a href="{{ asset('/storage/articles/' . $paper->link) }}" target="_blank">Open</a>
+                                </td>
+                            </tr>
+                            @php $cnt += 1; @endphp
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
