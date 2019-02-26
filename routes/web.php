@@ -24,7 +24,7 @@ Route::get('/papers', 'PapersController@index')->name('papers');
 
 Route::get('/gallery', 'GalleryController@index')->name('gallery');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 // Admin routes
 Route::get('/admin', 'AdminController@index')->name('admin');

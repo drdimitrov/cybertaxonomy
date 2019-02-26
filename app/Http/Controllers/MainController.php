@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\WebsiteNotification;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -24,6 +25,12 @@ class MainController extends Controller
             'email' => 'required|email',
             'question' => 'required',
         ]);
+
+        \Mail::to('dimitrov@nmnhs.com')->send(new WebsiteNotification(
+            $request->name,
+            'from the website',
+            $request->question
+        ));
     }
 
     public function team()
