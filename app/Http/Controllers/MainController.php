@@ -26,11 +26,26 @@ class MainController extends Controller
             'question' => 'required',
         ]);
 
-        \Mail::to('dimitrov@nmnhs.com')->send(new WebsiteNotification(
+        \Mail::to('info@nortiena.com')->send(new WebsiteNotification(
+            $request->email,
             $request->name,
-            'from the website',
+            'Message from Cybertaxonomy website',
             $request->question
         ));
+
+        // $data = [
+        //     'title'=>'title here',
+        //     'Content'=>'simple content'
+        // ];
+        // \Mail::send('emails.site_notification',$data, function ($message){
+
+        //     $message->to('info@nortiena.com', 'Dragomir Dimitrov')->subject('Welcome!');
+        // });
+
+        return redirect()->back()->with(
+            'msg',
+            'Your message has been sent. Thank you for contacting us!'
+        );
     }
 
     public function team()

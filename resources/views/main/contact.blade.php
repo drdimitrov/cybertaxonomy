@@ -5,6 +5,11 @@
 <div class="container content">
     <div class="row">
         <div class="col-md-8">
+            @if(session()->has('msg'))
+            <div class="alert alert-success" role="alert">
+            {{ session('msg') }}
+            </div>
+            @endif
             <div class="card">
                 <div class="card-header"><h2>Send us a message</h2></div>
                 <div class="card-body">

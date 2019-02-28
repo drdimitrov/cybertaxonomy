@@ -1,3 +1,3 @@
 {{ $sender }} <br>
-{{ $sender }} <br>
-{{ $sender }}
+{{ $subject }} <br>
+{{ $content }}
