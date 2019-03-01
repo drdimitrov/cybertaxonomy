@@ -17,13 +17,20 @@
             </div>
 
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Add picture</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <label for="picture">Add picture</label>
+                <select class="form-control" name="picture">
+                  @foreach($pictures as $picture)
+                    <option value="{{ $picture->id }}">{{ $picture->description }}</option>
+                  @endforeach
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tag">Add tag</label>
+                <select class="form-control" name="tag">
+                  @foreach($tags as $tag)
+                    <option value="{{ $tag->id }}">{{ $tag->name }}</option>
+                  @endforeach
                 </select>
             </div>
 

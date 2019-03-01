@@ -36,3 +36,4 @@ Route::get('/admin/picture', 'AdminController@picture')->name('admin.picture');
 Route::post('/admin/picture', 'AdminController@pictureSave');
 
 Route::get('/admin/news', 'AdminController@news')->name('admin.news');
+Route::post('/admin/news', 'AdminController@newsSave');

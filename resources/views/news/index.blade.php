@@ -8,12 +8,45 @@
             <div class="card">
                 <div class="card-header"><h2>News</h2></div>
                 <div class="card-body">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                    </p>
+<div class="row">
+                    {{-- News item --}}
+                    @foreach($news as $newsItem)
+                    <div class="col-md-3">
+                        <div class="card"> <img class="img-fluid" src="{{ $newsItem->image->url }}" alt="">
+                            <div class="card-img-overlay">
+                                <span class="badge badge-pill badge-danger">{{ $newsItem->tag->name }}</span>
+                            </div>
+                            <div class="card-body" style="min-height: 220px;">
+                                <div class="news-title">
+                                    <h5 class="title-small">
+                                        <a href="#">{{ $newsItem->title }}</a>
+                                    </h5>
+                                    <div class="news-body">
+                                        {{ str_limit($newsItem->content, $limit = 50, $end = '...') }}
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-time">
+                                        <em>{{ $newsItem->created_at->diffForHumans() }}</em>
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                    {{-- End of News item --}}
+</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<style>
+    .card-img-overlay{
+        height: 20px;
+    }
+    .card-body{
+        text-align: left;
+    }
+</style>
 @endsection

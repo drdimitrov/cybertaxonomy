@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
     public function index()
     {
-        return view('news.index');
+        $news = News::with(['image', 'tag'])->latest()->limit(20)->get();
+
+        return view('news.index', compact('news'));
     }
 }

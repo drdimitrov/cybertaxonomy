@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\News;
 use App\Picture;
+use App\Tag;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -78,7 +80,32 @@ class AdminController extends Controller
 
     public function news()
     {
-        return view('admin.news');
+        $tags = Tag::all();
+        $pictures = Picture::latest()
+            ->limit(20)
+            ->get();
 
+        return view('admin.news', compact('tags', 'pictures'));
+    }
+
+    public function newsSave(Request $request)
+    {
+        $this->validate($request, [
+            'title' => 'required',
+            'content' => 'required',
+            'picture' => 'required',
+            'tag' => 'required',
+        ]);
+
+        $item = News::create([
+            'title' => $request->title,
+            'content' => $request->content,
+            'picture' => $request->picture,
+            'tag_id' => $request->tag,
+        ]);
+
+        if($item->save()){
+            return redirect()->back();
+        }
     }
 }
