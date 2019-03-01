@@ -34,6 +34,14 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" name="subject" placeholder="The subject of your message">
+                            @if ($errors->has('subject'))
+                               <p style="color:red; font-size: 0.8em;">{{ $errors->first('subject') }}</p>
+                            @endif
+                        </div>
+
+                        <div class="form-group">
                             <label for="question">Your question:</label>
                             <textarea class="form-control" rows="5" name="question"></textarea>
                             @if ($errors->has('question'))

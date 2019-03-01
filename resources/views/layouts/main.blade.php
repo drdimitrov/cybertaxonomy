@@ -40,7 +40,14 @@
 
     <footer class="footer mt-auto py-3">
       <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <div class="row">
+          <div class="col">
+            <h4>Partners:</h4>
+            <a href="https://www.fni.bg/" target="_blank">
+              <img src="{{ asset('/images/fni.png') }}" width="250" alt="fni">
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
 

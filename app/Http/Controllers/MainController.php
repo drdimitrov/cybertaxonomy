@@ -23,13 +23,14 @@ class MainController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',
+            'subject' => 'required',
             'question' => 'required',
         ]);
 
         \Mail::to('info@nortiena.com')->send(new WebsiteNotification(
             $request->email,
             $request->name,
-            'Message from Cybertaxonomy website',
+            $request->subject,
             $request->question
         ));
 

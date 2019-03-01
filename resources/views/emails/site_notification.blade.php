@@ -1,3 +1,8 @@
-{{ $sender }} <br>
-{{ $subject }} <br>
-{{ $content }}
+@component('mail::message')
+Subject: {{ $subject }}
+
+Message: <br> {{ $content }}
+
+Sender: {{ $senderName }}
+
+@endcomponent

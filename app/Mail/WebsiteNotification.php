@@ -40,10 +40,8 @@ class WebsiteNotification extends Mailable
     public function build()
     {
         return $this->from($this->sender, $this->senderName)
-            ->subject($this->subject)
-            ->view('emails.site_notification')
+            ->markdown('emails.site_notification')
             ->with([
-                'sender' => $this->sender,
                 'subject' => $this->subject,
                 'content' => $this->content,
             ]);
