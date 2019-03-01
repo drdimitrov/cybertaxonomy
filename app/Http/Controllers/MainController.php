@@ -27,21 +27,12 @@ class MainController extends Controller
             'question' => 'required',
         ]);
 
-        \Mail::to('info@nortiena.com')->send(new WebsiteNotification(
+        \Mail::to(['info@nortiena.com', 'atypus@abv.bg'])->send(new WebsiteNotification(
             $request->email,
             $request->name,
             $request->subject,
             $request->question
         ));
-
-        // $data = [
-        //     'title'=>'title here',
-        //     'Content'=>'simple content'
-        // ];
-        // \Mail::send('emails.site_notification',$data, function ($message){
-
-        //     $message->to('info@nortiena.com', 'Dragomir Dimitrov')->subject('Welcome!');
-        // });
 
         return redirect()->back()->with(
             'msg',
