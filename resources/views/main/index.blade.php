@@ -28,7 +28,7 @@
                     @foreach($news as $newsItem)
                     <aside style="text-align: left;">
                         <h5>
-                            <a href="#">{{ $newsItem->title }}</a>
+                            <a href="{{ route('newsitem', $newsItem->id) }}">{{ $newsItem->title }}</a>
                         </h5>
 
                         <p>{{ str_limit($newsItem->content, $limit = 80, $end = '...') }}</p>

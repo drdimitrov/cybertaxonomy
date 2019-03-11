@@ -19,6 +19,7 @@ Route::get('/contact-us', 'MainController@contact')->name('contact');
 Route::post('/contact-us', 'MainController@postContact');
 
 Route::get('/news', 'NewsController@index')->name('news');
+Route::get('/news/{newsItem}', 'NewsController@newsItem')->name('newsitem');
 
 Route::get('/papers', 'PapersController@index')->name('papers');
 

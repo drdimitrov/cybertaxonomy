@@ -19,7 +19,7 @@
                                 <div class="card-body" style="min-height: 220px;">
                                     <div class="news-title">
                                         <h5 class="title-small">
-                                            <a href="#">{{ $newsItem->title }}</a>
+                                            <a href="{{ route('newsitem', $newsItem->id) }}">{{ $newsItem->title }}</a>
                                         </h5>
                                         <div class="news-body">
                                             {{ str_limit($newsItem->content, $limit = 50, $end = '...') }}
