@@ -1,0 +1,1 @@
+[11-Mar-2019 21:09:16] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_CONSTANT_ENCAPSED_STRING or '(' in phar:///opt/cpanel/composer/bin/composer/bin/composer on line 9

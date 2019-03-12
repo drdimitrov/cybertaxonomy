@@ -33,7 +33,12 @@
       </div>
 
       @yield('content')
-
+    <img src="/images/pselaphodes.png" style="
+                width: 50px;
+                position: fixed;
+                bottom: 150px;
+                right: 20px;
+            ">
     </main>
 
     <div style="min-height: 50px;"></div>

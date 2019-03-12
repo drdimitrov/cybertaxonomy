@@ -10703,11 +10703,28 @@ code {
 }
 
 .jumbotron-fluid {
-  background-image: url("/images/cybertaxonomy.jpg");
+  background-image: url("/images/lakatnik.jpg");
   background-color: #cccccc;
 }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+/*Additional*/
+.display-4, .lead{
+    color: #fff;
+}
+
+.jumbotron.jumbotron-fluid{
+    border-bottom: 3px solid #666633;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-body{
+    background-color: rgba(255, 230, 255, 0.2);
 }
 
