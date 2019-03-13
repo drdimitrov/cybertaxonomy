@@ -33,12 +33,7 @@
       </div>
 
       @yield('content')
-    <img src="/images/pselaphodes.png" style="
-                width: 50px;
-                position: fixed;
-                bottom: 150px;
-                right: 20px;
-            ">
+    <img id="scroll_back_img" src="/images/pselaphodes.png" >
     </main>
 
     <div style="min-height: 50px;"></div>
@@ -63,5 +58,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
 
     @yield('scripts')
+    <script>
+      $('#scroll_back_img').click(function(e){
+          console.log('clicked');
+      });
+
+      $(document).on( 'scroll', function(){
+          if ($(window).scrollTop() > 100) {
+              $('#scroll_back_img').show();
+          } else {
+              $('#scroll_back_img').hide();
+          }
+      });
+
+      $(function(){
+          $('#scroll_back_img').on('click', scrollToTop);
+
+          //var x = parseInt($('.wrapper').first().css('padding-top')) - 15;
+      });
+
+      function scrollToTop() {
+          verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+          element = $('body');
+          offset = element.offset();
+          offsetTop = offset.top;
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    </script>
   </body>
 </html>
