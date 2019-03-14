@@ -47,6 +47,40 @@
               <img src="{{ asset('/images/fni.png') }}" width="250" alt="fni">
             </a>
           </div>
+
+          <div class="col">
+            <h4>Platforms, linked to the project:</h4>
+
+            <div>
+              <a href="http://pselaphinae-bg.myspecies.info" target="_blank">
+                http://pselaphinae-bg.myspecies.info
+              </a>
+            </div>
+
+            <div>
+              <a href="http://coleoptera-bulgaria.myspecies.info" target="_blank">
+                http://coleoptera-bulgaria.myspecies.info
+              </a>
+            </div>
+
+            <div>
+              <a href="https://smartbirds.org" target="_blank">
+                https://smartbirds.org
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <h4>Additional links:</h4>
+
+            <div>
+              <a href="https://www.gbif.org/" target="_blank">
+                GBIF | Global Biodiversity Information Facility
+              </a>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </footer>
