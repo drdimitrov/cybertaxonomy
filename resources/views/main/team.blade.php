@@ -14,7 +14,7 @@
                     </p>
 
                     <p>
-                        - <span style="font-weight: bold">Associate Professor, Dr. Hristo Delchev</span>, a long-term arachnologist, author of numerous publications and monographs related to the spiders of Bulgaria and the Balkans, with special interest in the conservation of species and nature. He maintains the largest spider database in Bulgaria.
+                        - <a href="https://www.researchgate.net/profile/Christo_Deltshev" target="_blank"><span style="font-weight: bold">Associate Professor, Dr. Hristo Delchev</span></a>, a long-term arachnologist, author of numerous publications and monographs related to the spiders of Bulgaria and the Balkans, with special interest in the conservation of species and nature. He maintains the largest spider database in Bulgaria.
                     </p>
 
                     <p>
