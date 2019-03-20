@@ -41,14 +41,14 @@
     <footer class="footer mt-auto py-3">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-sm">
             <h4>Partners:</h4>
             <a href="https://www.fni.bg/" target="_blank">
               <img src="{{ asset('/images/fni.png') }}" width="250" alt="fni">
             </a>
           </div>
 
-          <div class="col">
+          <div class="col-sm">
             <h4>Platforms, linked to the project:</h4>
 
             <div>
@@ -65,12 +65,12 @@
 
             <div>
               <a href="https://smartbirds.org" target="_blank">
-                https://smartbirds.org
+                Smart birds
               </a>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col-sm">
             <h4>Additional links:</h4>
 
             <div>
