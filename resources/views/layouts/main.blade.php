@@ -28,7 +28,7 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4 project-name">Cybertaxonomy</h1>
-          <p class="lead">Cybertaxonomic approach to phylogenetic studies of model invertebrate genera (Invertebrata, Arachnida, Insecta) clarifyng the problems of origin, formation and conservation of the Invertebrate Fauna of the Balkan Peninsula.</p>
+          <p class="lead" style="color: #ccccb3;">Cybertaxonomic approach to phylogenetic studies of model invertebrate genera (Invertebrata, Arachnida, Insecta) clarifyng the problems of origin, formation and conservation of the Invertebrate Fauna of the Balkan Peninsula.</p>
         </div>
       </div>
 
