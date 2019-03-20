@@ -93,4 +93,9 @@ code {
   }
 }
 
-
+.display-4.project-name{
+  @include media-breakpoint-up(xs) {
+    font-size: 1.9em;
+    margin-top: 30px;
+  }
+}

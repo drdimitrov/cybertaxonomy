@@ -27,8 +27,8 @@
     <main role="main" class="flex-shrink-0">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Cybertaxonomy</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <h1 class="display-4 project-name">Cybertaxonomy</h1>
+          <p class="lead">Cybertaxonomic approach to phylogenetic studies of model invertebrate genera (Invertebrata, Arachnida, Insecta) clarifyng the problems of origin, formation and conservation of the Invertebrate Fauna of the Balkan Peninsula.</p>
         </div>
       </div>
 

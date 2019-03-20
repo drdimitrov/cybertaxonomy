@@ -10740,3 +10740,8 @@ code {
   cursor: pointer;
 }
 
+.display-4.project-name {
+  font-size: 1.9em;
+  margin-top: 30px;
+}
+
