@@ -32,7 +32,7 @@ class MainController extends Controller
             'question' => 'required',
         ]);
 
-        \Mail::to(['info@nortiena.com', 'atypus@abv.bg'])->send(new WebsiteNotification(
+        \Mail::to(['info@nortiena.com', 'rbekchiev@gmail.com'])->send(new WebsiteNotification(
             $request->email,
             $request->name,
             $request->subject,
