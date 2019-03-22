@@ -48,7 +48,7 @@ class AdminController extends Controller
             'year' => $request->year,
             'title' => $request->title,
             'journal' => $request->journal,
-            'link' => $request->pdf->getClientOriginalName(),
+            'link' => $request->has('pdf') ? $request->pdf->getClientOriginalName() : null,
         ]);
 
         if($paper->save()){
