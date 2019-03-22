@@ -39,7 +39,7 @@ class AdminController extends Controller
             'journal' => 'required',
         ]);
 
-        if($request->pdf){
+        if($request->has('pdf')){
             $file = $request->pdf->storeAs('public/articles', $request->pdf->getClientOriginalName());
         }
 
