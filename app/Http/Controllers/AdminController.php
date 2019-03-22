@@ -39,7 +39,9 @@ class AdminController extends Controller
             'journal' => 'required',
         ]);
 
-        $file = $request->pdf->storeAs('public/articles', $request->pdf->getClientOriginalName());
+        if($request->pdf){
+            $file = $request->pdf->storeAs('public/articles', $request->pdf->getClientOriginalName());
+        }
 
         $paper = Article::create([
             'authors' => $request->authors,
