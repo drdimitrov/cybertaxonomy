@@ -28,7 +28,7 @@
                                 <th scope="row">{{ $paper->authors }}</th>
                                 <td>{{ $paper->year }}</td>
                                 <td>{!! $paper->title !!}</td>
-                                <td>{{ $paper->journal }}</td>
+                                <td>{!! $paper->journal !!}</td>
                                 {{-- <td>
                                     <a href="{{ asset('/storage/articles/' . $paper->link) }}" target="_blank">Open</a>
                                 </td> --}}
