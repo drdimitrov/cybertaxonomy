@@ -63,10 +63,10 @@
                 <div class="card-body">
                     <address>
                         <strong>National Museum of Natural History</strong><br>
+                        <strong>Bulgarian Academy of Sciences</strong><br>
                         1 Tsar Osvoboditel blvd.<br>
                         1000 Sofia<br>
-                        Bulgaria<br>
-                        <abbr title="Phone">Phone:</abbr> +359 2 222222
+                        Bulgaria
                     </address>
                 </div>
             </div>

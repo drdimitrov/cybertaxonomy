@@ -16,7 +16,7 @@
                                 <th scope="col">Year</th>
                                 <th scope="col">Title</th>
                                 <th scope="col">Journal</th>
-                                <th scope="col">Full text</th>
+                                {{-- <th scope="col">Full text</th> --}}
                             </tr>
                         </thead>
                         <tbody>
@@ -29,9 +29,9 @@
                                 <td>{{ $paper->year }}</td>
                                 <td>{!! $paper->title !!}</td>
                                 <td>{{ $paper->journal }}</td>
-                                <td>
+                                {{-- <td>
                                     <a href="{{ asset('/storage/articles/' . $paper->link) }}" target="_blank">Open</a>
-                                </td>
+                                </td> --}}
                             </tr>
                             @php $cnt += 1; @endphp
                             @endforeach
