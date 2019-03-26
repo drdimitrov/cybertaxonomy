@@ -53,13 +53,19 @@
 
             <div>
               <a href="http://pselaphinae-bg.myspecies.info" target="_blank">
-                http://pselaphinae-bg.myspecies.info
+                The Pselaphinae (Coleoptera: Staphylinidae) of Bulgaria
               </a>
             </div>
 
             <div>
               <a href="http://coleoptera-bulgaria.myspecies.info" target="_blank">
-                http://coleoptera-bulgaria.myspecies.info
+                The Coleoptera (Insecta) of Bulgaria
+              </a>
+            </div>
+
+            <div>
+              <a href="http://balkan-spiders.com/" target="_blank">
+                The Spiders of Balkan Peninsula
               </a>
             </div>
 
