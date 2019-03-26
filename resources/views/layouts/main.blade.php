@@ -53,13 +53,13 @@
 
             <div>
               <a href="http://pselaphinae-bg.myspecies.info" target="_blank">
-                The Pselaphinae (Coleoptera: Staphylinidae) of Bulgaria
+                The Pselaphinae of Bulgaria
               </a>
             </div>
 
             <div>
               <a href="http://coleoptera-bulgaria.myspecies.info" target="_blank">
-                The Coleoptera (Insecta) of Bulgaria
+                The Coleoptera of Bulgaria
               </a>
             </div>
 
