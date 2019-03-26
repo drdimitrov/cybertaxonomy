@@ -65,7 +65,7 @@
 
             <div>
               <a href="http://balkan-spiders.com/" target="_blank">
-                The Spiders of Balkan Peninsula
+                The Spiders of the Balkan Peninsula
               </a>
             </div>
 
