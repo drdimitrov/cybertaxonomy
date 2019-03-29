@@ -33,7 +33,7 @@
       </div>
 
       @yield('content')
-    <img id="scroll_back_img" src="/images/pselaphodes.png" >
+    <img id="scroll_back_img" src="/images/bug.png" >
     </main>
 
     <div style="min-height: 50px;"></div>
