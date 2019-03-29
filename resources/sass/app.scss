@@ -94,6 +94,8 @@ code {
 }
 
 .display-4.project-name{
+  text-shadow: -1px 0 #e6b800, 0 1px #e6b800, 1px 0 #e6b800, 0 -1px #e6b800;
+
   @include media-breakpoint-up(xs) {
     font-size: 1.9em;
     margin-top: 30px;
