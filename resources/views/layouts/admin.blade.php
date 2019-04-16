@@ -100,7 +100,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.0.3/tinymce.min.js"></script>
   <script>
     tinymce.init({
-      selector: '#news_content'
+      selector: '#news_content',
+      formats: {
+        bold: {inline: 'b'},
+        italic: {inline: 'i'}
+      },
+      valid_elements: "b,i,b/strong,i/em",
+      toolbar: "bold italic underline"
     });
   </script>
 
