@@ -18,7 +18,7 @@
                             </div>
                         </div>
 
-                        <div class="news-content">{{ $newsItem->content }}</div>
+                        <div class="news-content">{!! $newsItem->content !!}</div>
                         <div style="width: 100%; font-style: italic; padding-right: 20px;">
                             <p class="float-right">{{ $newsItem->created_at->diffForHumans() }}</p>
                         </div>
