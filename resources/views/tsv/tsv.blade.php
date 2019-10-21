@@ -7,7 +7,7 @@
             &nbsp;&nbsp;&nbsp;
             <div class="form-group">
                 <label for="tsv">Select file: </label>
-                <input class="form-control" type="file" name="tsv">
+                <input class="form-control-file" type="file" name="tsv">
             </div>
 
             &nbsp;&nbsp;&nbsp;

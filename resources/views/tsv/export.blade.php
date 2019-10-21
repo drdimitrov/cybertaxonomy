@@ -1,5 +1,5 @@
-@php(header("Content-Type: application/xls"))
-@php(header("Content-Disposition: attachment; filename=filename.xls"))
+@php(header("Content-Type: application/xlsx"))
+@php(header("Content-Disposition: attachment; filename=tsv_parsed.xlsx"))
 @php(header("Pragma: no-cache"))
 @php(header("Expires: 0"))
 
