@@ -25,6 +25,9 @@ Route::get('/papers', 'PapersController@index')->name('papers');
 
 Route::get('/gallery', 'GalleryController@index')->name('gallery');
 
+Route::get('/tsv', 'TSVController@index')->name('tsv');
+Route::post('/tsv', 'TSVController@parse');
+
 Auth::routes();
 
 // Admin routes
