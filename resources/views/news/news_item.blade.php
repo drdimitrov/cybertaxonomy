@@ -14,7 +14,7 @@
                             <h1>{{ $newsItem->title }}</h1>
 
                             <div>
-                                <img class="center" src="{{ $newsItem->image->url }}" alt="">
+                                <img class="center" src="{{ $newsItem->image->url }}" alt="" style="max-width: 300px">
                             </div>
                         </div>
 
