@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\WebsiteNotification;
 use App\News;
 use Illuminate\Http\Request;
+use TimeHunter\LaravelGoogleReCaptchaV3\Validations\GoogleReCaptchaV3ValidationRule;
 
 class MainController extends Controller
 {
@@ -31,13 +32,21 @@ class MainController extends Controller
             'subject' => 'required',
             'question' => 'required',
         ]);
-
-        \Mail::to(['info@nortiena.com', 'rbekchiev@gmail.com'])->send(new WebsiteNotification(
-            $request->email,
-            $request->name,
-            $request->subject,
-            $request->question
-        ));
+        
+        $rule = [
+            'g-recaptcha-response' => [new GoogleReCaptchaV3ValidationRule('contact_us_action')]
+        ];
+        
+        $validator = \Illuminate\Support\Facades\Validator::make($request->toArray(),$rule)->errors();
+        
+         if(empty($validator->toArray())){
+              \Mail::to(['info@nortiena.com', 'rbekchiev@gmail.com'])->send(new WebsiteNotification(
+                $request->email,
+                $request->name,
+                $request->subject,
+                $request->question
+            ));
+         }
 
         return redirect()->back()->with(
             'msg',

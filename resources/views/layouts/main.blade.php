@@ -125,5 +125,6 @@
           window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     </script>
+     {!!  GoogleReCaptchaV3::init() !!}
   </body>
 </html>
