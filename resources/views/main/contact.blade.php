@@ -49,6 +49,8 @@
                             @endif
                         </div>
 
+                        {!!  GoogleReCaptchaV3::renderField('contact_us_id','contact_us_action') !!}
+
                         {{ csrf_field() }}
 
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -73,4 +75,8 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+<script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_V3_SITE_KEY') }}"></script>
 @endsection
