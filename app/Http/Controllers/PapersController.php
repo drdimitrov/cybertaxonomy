@@ -9,7 +9,7 @@ class PapersController extends Controller
 {
     public function index()
     {
-        $papers = Article::latest()->get();
+        $papers = Article::orderBy('year', 'desc')->get();
 
         return view('papers.index', compact('papers'));
 
