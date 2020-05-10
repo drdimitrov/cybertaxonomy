@@ -33,7 +33,7 @@
                     </p>
 
                     <p>
-                        - <a href="https://www.researchgate.net/profile/Dragomir_Dimitrov2" target="_blank"><span style="font-weight: bold">Dr. Dragomir Dimitrov</span></a>, an arachnologist with extensive interests and experience in the systematisation of faunistic and bibliographic information and its use in environmental studies. He has professional knowledge in programming, organising databases and innovative ways of presenting and processing information.
+                        - <a href="http://nmnhs.com/dimitrov-dragomir-en.html" target="_blank"><span style="font-weight: bold">Dr. Dragomir Dimitrov</span></a>, an arachnologist with extensive interests and experience in the systematisation of faunistic and bibliographic information and its use in environmental studies. He has professional knowledge in programming, organising databases and innovative ways of presenting and processing information.
                     </p>
 
                     <p>
