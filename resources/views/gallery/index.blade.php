@@ -15,7 +15,7 @@
                                     <img src="{{ app('uploadcare')->getFile($picture->url)->op('quality/lightest')->op('progressive/yes')->resize(200, 150, true)->getUrl() }}" alt="" />
                                 </a>
                             </div>
-                            <div class="card-footer text-center">{{ $picture->description }}</div>
+                            <div class="card-footer text-center">{!! $picture->description !!}</div>
                         </div>                        
                     @endforeach
                 </div>
