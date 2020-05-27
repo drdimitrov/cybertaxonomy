@@ -9,9 +9,14 @@
                 <div class="card-header"><h2>Picture gallery</h2></div>
                 <div class="card-body">
                     @foreach($pictures as $picture)
-                        <a href="{{ $picture->url }}" class="image featured fancybox fancyimg" rel="gallery1" title="{{ $picture->description }}">
-                            <img src="{{ app('uploadcare')->getFile($picture->url)->op('quality/lightest')->op('progressive/yes')->resize(200, 150, true)->getUrl() }}" alt="" />
-                        </a>
+                        <div class="card" style="display: inline-block;">
+                            <div class="card-body">
+                                <a href="{{ $picture->url }}" class="image featured fancybox fancyimg" rel="gallery1" title="{{ $picture->description }}">
+                                    <img src="{{ app('uploadcare')->getFile($picture->url)->op('quality/lightest')->op('progressive/yes')->resize(200, 150, true)->getUrl() }}" alt="" />
+                                </a>
+                            </div>
+                            <div class="card-footer text-center">{{ $picture->description }}</div>
+                        </div>                        
                     @endforeach
                 </div>
             </div>
